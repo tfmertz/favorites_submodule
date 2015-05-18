@@ -1,0 +1,64 @@
+<?php
+
+function favorites_menu() {
+    $items = [];
+
+    $items['fav_movies'] = array(
+        'title' => 'Favorite Movies',
+        'page callback' => 'fav_movies',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_TYPE,
+    );
+
+    $items['fav_books'] = array(
+        'title' => 'Favorite Books',
+        'page callback' => 'fav_books',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_TYPE,
+    );
+
+    $items['fav_shows'] = array(
+        'title' => 'Favorite Shows',
+        'page callback' => 'fav_shows',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_TYPE,
+    );
+
+    return $items;
+}
+
+function fav_movies() {
+    return '
+        <h1>Favorite Movies</h1>
+
+        <ol>
+            <li>Fight Club</li>
+            <li>Totoro</li>
+            <li>Big Hero 6</li>
+        </ol>
+    ';
+}
+
+function fav_books() {
+    return '
+        <h1>Favorite Books</h1>
+
+        <ol>
+            <li>Choke</li>
+            <li>World War Z</li>
+            <li>Stinky Cheese Man</li>
+        </ol>
+    ';
+}
+
+function fav_shows() {
+    return '
+        <h1>Favorite Shows</h1>
+
+        <ol>
+            <li>Monk</li>
+            <li>Game of Thrones</li>
+            <li>Sherlock</li>
+        </ol>
+    ';
+}
