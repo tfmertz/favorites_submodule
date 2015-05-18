@@ -29,8 +29,6 @@ function favorites_menu() {
 
 function fav_movies() {
     return '
-        <h1>Favorite Movies</h1>
-
         <ol>
             <li>Fight Club</li>
             <li>Totoro</li>
@@ -41,8 +39,6 @@ function fav_movies() {
 
 function fav_books() {
     return '
-        <h1>Favorite Books</h1>
-
         <ol>
             <li>Choke</li>
             <li>World War Z</li>
