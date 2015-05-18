@@ -7,21 +7,21 @@ function favorites_menu() {
         'title' => 'Favorite Movies',
         'page callback' => 'fav_movies',
         'access callback' => TRUE,
-        'type' => MENU_NORMAL_TYPE,
+        'type' => MENU_NORMAL_ITEM,
     );
 
     $items['fav_books'] = array(
         'title' => 'Favorite Books',
         'page callback' => 'fav_books',
         'access callback' => TRUE,
-        'type' => MENU_NORMAL_TYPE,
+        'type' => MENU_NORMAL_ITEM,
     );
 
     $items['fav_shows'] = array(
         'title' => 'Favorite Shows',
         'page callback' => 'fav_shows',
         'access callback' => TRUE,
-        'type' => MENU_NORMAL_TYPE,
+        'type' => MENU_NORMAL_ITEM,
     );
 
     return $items;
